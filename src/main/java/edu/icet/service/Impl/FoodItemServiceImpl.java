@@ -40,7 +40,7 @@ public class FoodItemServiceImpl implements FoodtemService {
     @Override
     public Food_itemEntity Update(Fooditem fooditem) {
         Food_itemEntity foodItem=modelMapper.map(fooditem,Food_itemEntity.class);
-        foodItemRepository.save(foodItem);
-        return foodItem;
+        return foodItemRepository.save(foodItem);
+
     }
 }
