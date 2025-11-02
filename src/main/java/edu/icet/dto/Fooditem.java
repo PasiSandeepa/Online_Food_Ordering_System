@@ -9,11 +9,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Food_item {
+
+public class Fooditem {
     private  String name;
-    private String itemCode;
+    private Integer itemCode;
     private String description;
-    private String packSize;
     private Double unitPrice;
-    private Integer qtyOnHand;
+    private Long id;
+
 }

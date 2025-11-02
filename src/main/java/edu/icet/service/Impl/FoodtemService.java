@@ -5,8 +5,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+
 public interface FoodtemService {
     void add(Fooditem fooditem);
     List<Fooditem> getAll();
+
+    Long getFoodItemById(Long id);
 }
