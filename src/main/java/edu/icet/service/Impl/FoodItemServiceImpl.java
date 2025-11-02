@@ -36,4 +36,11 @@ public class FoodItemServiceImpl implements FoodtemService {
         Food_itemEntity entity = modelMapper.map(id,Food_itemEntity.class);
         return (entity != null) ? entity.getId() : null;
     }
+
+    @Override
+    public Food_itemEntity Update(Fooditem fooditem) {
+        Food_itemEntity foodItem=modelMapper.map(fooditem,Food_itemEntity.class);
+        foodItemRepository.save(foodItem);
+        return foodItem;
+    }
 }
