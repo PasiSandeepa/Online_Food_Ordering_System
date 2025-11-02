@@ -1,8 +1,12 @@
 package edu.icet.service.Impl;
 
-import edu.icet.dto.Food_item;
+import edu.icet.dto.Fooditem;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public interface FoodtemService {
-    void add(Food_item foodItem);
-
+    void add(Fooditem fooditem);
+    List<Fooditem> getAll();
 }
